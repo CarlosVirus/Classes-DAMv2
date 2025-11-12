@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a28e250040cb1ff44bac3b5c8237c7ac, type: 3}
+  m_Name: Priest
+  m_EditorClassIdentifier: 
+  Name: Prieto
+  Description: Power Btm
+  HP: 50
+  Damage: 10
+  Image: {fileID: -4373745917658779605, guid: 4dfd3334fabd1bd42a46a1cc7b81ff1c, type: 3}

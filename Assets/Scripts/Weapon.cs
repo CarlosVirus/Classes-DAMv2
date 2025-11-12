@@ -1,7 +1,7 @@
 using UnityEngine;
 public abstract class Weapon : ScriptableObject
 {
-    [SerializeField] public int _damage;
-    [SerializeField] public float _cooldown;
+    public int Damage;
+    public float Cooldown;
     public abstract void Attack();
 }

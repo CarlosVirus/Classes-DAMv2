@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7c7b5372ff78784bb4f0bcfd19b76c9, type: 3}
+  m_Name: 1Question
+  m_EditorClassIdentifier: 
+  text: "Qu\xE8 esperes d'aquest curs? "
+  sequence: 0
+  answers:
+  - {fileID: 11400000, guid: 0f5b9737b73dc5e4196c89755ed97814, type: 2}
+  - {fileID: 11400000, guid: e6eeff1cdc3c88540b3bcbb804adf197, type: 2}
+  - {fileID: 11400000, guid: 45eb373720d0f9d4d9ec05b45a7c462e, type: 2}

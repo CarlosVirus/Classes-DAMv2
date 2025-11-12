@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
-
+[RequireComponent(typeof(AnimationBehaviour))]
 public class Player2 : MonoBehaviour, InputSystem_Actions.IPlayerActions
 {
     [SerializeField] private GameObject bullet;
@@ -9,11 +9,13 @@ public class Player2 : MonoBehaviour, InputSystem_Actions.IPlayerActions
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private Transform _shootPoint;
     public Stack<GameObject> bulletPool = new Stack<GameObject>();
+    private AnimationBehaviour _aB;
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
         inputActions = new InputSystem_Actions();
         inputActions.Player.SetCallbacks(this);
+        _aB = GetComponent<AnimationBehaviour>();
     }
     private void OnEnable()
     {
@@ -29,7 +31,8 @@ public class Player2 : MonoBehaviour, InputSystem_Actions.IPlayerActions
     }
     public void OnMove(InputAction.CallbackContext context)
     {
-        _rb.linearVelocity= context.ReadValue<Vector2>(); 
+        _rb.linearVelocity= context.ReadValue<Vector2>();
+        _aB.RunAnimation(context.ReadValue<Vector2>());
     }
 
     public void OnClick(InputAction.CallbackContext context)
